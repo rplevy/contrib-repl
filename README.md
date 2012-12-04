@@ -6,14 +6,18 @@ REPL.
 
 ## Usage
 
-###Option A. Use as middleware:
+###Option A. Use as nREPL middleware
+
+In project.clj:
 
 ```clojure
   :dependencies [[contrib-repl "0.0.1"]]
   :repl-options {:nrepl-middleware [contrib-repl.middleware/add-contrib-deps]}
 ```
 
-###Option B. Invoke from an already running REPL:
+###Option B. Invoke from an already running REPL
+
+In a REPL session:
 
 ```clojure
 (require '[cemerick.pomegranate :as pom])
@@ -21,8 +25,11 @@ REPL.
                       :repositories {"clojars" "http://clojars.org/repo"})
 (require '[contrib-repl.manually :refer [add-contrib-deps]])
 
-(add-contrib-deps ["tools.nrepl" "core.match"]) ; only add these libraries
 (add-contrib-deps) ; add all of the contrib libraries
+
+You can also add a subset of the contrib libraries:
+
+(add-contrib-deps ["tools.nrepl" "core.match"]) ; only add these libraries
 ```
 
 ## License
