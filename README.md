@@ -11,7 +11,7 @@ REPL.
 Edit project.clj:
 
 ```clojure
-  :dependencies [[contrib-repl "0.1.0"]]
+  :dependencies [[rplevy/contrib-repl "0.1.0"]]
   :repl-options {:nrepl-middleware [contrib-repl.middleware/add-contrib-deps]}
 ```
 
@@ -23,7 +23,7 @@ In a REPL session:
 
 ```clojure
 (require '[cemerick.pomegranate :as pom])
-(pom/add-dependencies :coordinates '[[contrib-repl "0.1.0"]]
+(pom/add-dependencies :coordinates '[[rplevy/contrib-repl "0.1.0"]]
                       :repositories {"clojars" "http://clojars.org/repo"})
 (require '[contrib-repl.manually :refer [add-contrib-deps]])
 (add-contrib-deps) ; add all of the contrib libraries
@@ -35,6 +35,6 @@ You can also add just a subset of the contrib libraries:
 
 ## License
 
-Copyright © 2012 Robert P. Levy (@rplevy)
+Copyright © 2012 Robert P. Levy
 
 Distributed under the Eclipse Public License, the same as Clojure.
