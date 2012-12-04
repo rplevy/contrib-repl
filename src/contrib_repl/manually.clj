@@ -27,8 +27,7 @@
    and add them as dependencies using pomegranate."
   ([] (add-contrib-deps contrib-libraries))
   ([project-names]
-     (let []
-       (pom/add-dependencies
-        :coordinates (map (juxt (comp symbol (partial format "org.clojure/%s"))
-                                latest-version)
-                          project-names)))))
+     (pom/add-dependencies
+      :coordinates (map (juxt (comp symbol (partial format "org.clojure/%s"))
+                              latest-version)
+                        project-names))))
