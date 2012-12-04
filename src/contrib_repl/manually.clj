@@ -4,7 +4,7 @@
 
 ;; contrib project names from https://github.com/clojure
 (def contrib-libraries
-  ["tools.nrepl" "tools.trace" "tools.namespace" "tools.macro"
+  ["tools.trace" "tools.namespace" "tools.macro"
    "test.generative" "math.numeric-tower" "core.match" "core.logic"
    "data.priority-map" "core.contracts" "tools.cli" "java.jmx"
    "java.jdbc" "java.classpath" "data.xml" "data.json" "core.unify"
