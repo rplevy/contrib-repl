@@ -1,6 +1,5 @@
 (ns contrib-repl.middleware
-  (:require [contrib-repl.manually :as contrib-repl]
-            [clojure.tools.nrepl.middleware :refer [set-descriptor!]]))
+  (:require [contrib-repl.manually :as contrib-repl]))
 
 (def add-contrib-deps-once
   (memoize
