@@ -16,7 +16,6 @@
 (defn latest-version
   "use the Maven Central REST API to determine latest version of a library."
   [proj]
-  (Thread/sleep 100)
   (-> "http://search.maven.org/solrsearch/select?q=%s&rows=1&wt=json"
       (format proj)
       (client/get {:as :json})
