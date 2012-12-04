@@ -1,4 +1,4 @@
-(defproject contrib-repl "0.0.1"
+(defproject rplevy/contrib-repl "0.1.0"
   :description "nREPL middleware / manual-use lib to add all contrib deps"
   :url "http://clojars.org/contrib-repl"
   :license {:name "Eclipse Public License"
